@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import WatchesItem from './WatchesItem';
+
 import classes from './WatchesList.module.css';
 
 const WatchesList = props => {
@@ -6,10 +7,13 @@ const WatchesList = props => {
     <div className={classes.container}>
       <ul className={classes['watches-list']}>
         {props.watches.map(watch => (
-          <Link href="/" key={watch.id}>
-            <img src={watch.image} />
-            <h3>{watch.title}</h3>
-          </Link>
+          <WatchesItem
+            key={watch.id}
+            id={watch.id}
+            title={watch.title}
+            price={watch.price}
+            image={watch.image}
+          />
         ))}
       </ul>
     </div>

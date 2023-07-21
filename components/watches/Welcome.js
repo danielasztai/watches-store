@@ -1,10 +1,11 @@
 import { Fragment } from 'react';
 
+import Image from 'next/image';
+import Link from 'next/link';
+
 import classes from './Welcome.module.css';
 
-import Image from 'next/image';
-import welcomeImg from '../assets/welcome-img_1.jpg';
-import Link from 'next/link';
+import welcomeImg from '../../assets/welcome-img_1.jpg';
 
 const Welcome = () => {
   return (

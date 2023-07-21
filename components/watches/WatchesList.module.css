@@ -16,6 +16,8 @@
   row-gap: 50px;
   list-style-type: none;
   text-align: center;
+  cursor: pointer;
+  margin-top: 50px;
 }
 
 .watches-list h3 {

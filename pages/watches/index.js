@@ -1,6 +1,6 @@
 import { MongoClient } from 'mongodb';
 
-import WatchesList from '@/components/WatchesList';
+import WatchesList from '../../components/watches/WatchesList';
 
 const Watches = props => {
   return <WatchesList watches={props.watches} />;
