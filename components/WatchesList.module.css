@@ -1,0 +1,28 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container img {
+  height: 400px;
+  width: 300px;
+}
+
+.watches-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 150px;
+  row-gap: 50px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.watches-list h3 {
+  color: #555555;
+  cursor: pointer;
+}
+
+.watches-list h3:hover {
+  color: #c40d2e;
+}
