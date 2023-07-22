@@ -14,7 +14,7 @@ function MainNavigation() {
             <Link href="/watches">All Watches</Link>
           </li>
           <li>
-            <Link href="/new-meetup">Add New Meetup</Link>
+            <Link href="/new-watch">Add New Watch</Link>
           </li>
         </ul>
       </nav>
