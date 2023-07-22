@@ -2,6 +2,8 @@ import { Fragment } from 'react';
 
 import { useRouter } from 'next/router';
 
+import classes from './WatchesItem.module.css';
+
 const WatchesItem = props => {
   const router = useRouter();
 
@@ -12,8 +14,11 @@ const WatchesItem = props => {
   return (
     <Fragment>
       <li onClick={showDetailsHandler}>
-        <img src={props.image} />
-        <h3>{props.title}</h3>
+        <img src={props.image} className={classes.img} />
+        <div className={classes['card-bottom']}>
+          <h3>{props.title}</h3>
+          <p>Checkout the details</p>
+        </div>
       </li>
     </Fragment>
   );

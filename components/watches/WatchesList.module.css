@@ -3,11 +3,6 @@
   margin: 0 auto;
 }
 
-.container img {
-  height: 400px;
-  width: 300px;
-}
-
 .watches-list {
   display: flex;
   flex-wrap: wrap;
@@ -18,16 +13,4 @@
   text-align: center;
   cursor: pointer;
   margin: 50px 0;
-}
-
-.watches-list h3 {
-  color: #555555;
-  cursor: pointer;
-  margin-top: 10px;
-  font-size: 1.6rem;
-}
-
-.watches-list h3:hover {
-  color: #c40d2e;
-  transition: 0.3s;
 }
