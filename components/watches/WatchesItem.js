@@ -15,7 +15,13 @@ const WatchesItem = props => {
     <Fragment>
       <li onClick={showDetailsHandler}>
         <img src={props.image} className={classes.img} />
-        <div className={classes['card-bottom']}>
+        <div
+          className={
+            router.pathname === '/watches'
+              ? classes['card-bottom']
+              : classes['card-bottom-details']
+          }
+        >
           <h3>{props.title}</h3>
           <p>Checkout the details</p>
         </div>

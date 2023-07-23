@@ -1,3 +1,4 @@
+import { validateConfig } from 'next/dist/server/config-shared';
 import WatchesItem from './WatchesItem';
 
 import classes from './WatchesList.module.css';

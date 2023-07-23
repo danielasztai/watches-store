@@ -1,8 +1,16 @@
 import { MongoClient, ObjectId } from 'mongodb';
 import WatchDetails from '@/components/watches/WatchDetails';
+import { Fragment } from 'react';
 
 const DetailPage = props => {
-  return <WatchDetails watchDetails={props.watchDetails} />;
+  return (
+    <Fragment>
+      <WatchDetails
+        watchDetails={props.watchDetails}
+        listOfWatches={props.allWatchesExceptSelected}
+      />
+    </Fragment>
+  );
 };
 
 export async function getStaticPaths() {
@@ -35,6 +43,8 @@ export async function getStaticProps(context) {
 
   const watchesCollection = db.collection('watches');
 
+  const allWatchesExceptSelected = await watchesCollection.find().toArray();
+
   const selectedWatch = await watchesCollection.findOne({
     _id: new ObjectId(watchId),
   });
@@ -50,6 +60,15 @@ export async function getStaticProps(context) {
         image: selectedWatch.image,
         material: selectedWatch.material,
       },
+
+      allWatchesExceptSelected: allWatchesExceptSelected
+        .map(watch => ({
+          image: watch.image,
+          title: watch.title,
+          price: watch.price,
+          id: watch._id.toString(),
+        }))
+        .filter(watch => watchId !== watch.id),
     },
   };
 }

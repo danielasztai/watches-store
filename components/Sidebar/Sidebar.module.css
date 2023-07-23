@@ -1,0 +1,14 @@
+.container {
+  height: 90vh;
+  width: 300px;
+  overflow-y: scroll;
+}
+
+.container img {
+  width: 250px;
+  height: 350px;
+}
+
+.card-bottom {
+  width: 250px;
+}

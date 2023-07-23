@@ -1,8 +1,24 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 5rem);
+  overflow-y: hidden;
+}
+
 .container {
   display: flex;
+  justify-content: flex-start;
+  margin-left: 100px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
 }
 
 .container img {
-  max-width: 700px;
-  max-height: 1000px;
+  max-width: 500px;
+  max-height: 750px;
 }
