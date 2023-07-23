@@ -9,9 +9,16 @@ const WatchDetails = props => {
         <div className={classes.container}>
           <img src={props.watchDetails.image} />
           <div className={classes.details}>
-            <h1>{props.watchDetails.title}</h1>
-            <p>Material: {props.watchDetails.material}</p>
-            <p>Price: {props.watchDetails.price}</p>
+            <div className={classes.left}>
+              <h1>Brand:</h1>
+              <p>Material:</p>
+              <p>Price:</p>
+            </div>
+            <div className={classes.right}>
+              <h1>{props.watchDetails.title}</h1>
+              <p>{props.watchDetails.material}</p>
+              <p>{props.watchDetails.price}$</p>
+            </div>
           </div>
         </div>
         <Sidebar listOfWatches={props.listOfWatches} />

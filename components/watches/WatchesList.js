@@ -6,6 +6,7 @@ import classes from './WatchesList.module.css';
 const WatchesList = props => {
   return (
     <div className={classes.container}>
+      <h1 className={classes.header}>Our Collection</h1>
       <ul className={classes['watches-list']}>
         {props.watches.map(watch => (
           <WatchesItem

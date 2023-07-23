@@ -12,3 +12,7 @@
 .card-bottom {
   width: 250px;
 }
+
+.container li {
+  margin-bottom: 10px;
+}
