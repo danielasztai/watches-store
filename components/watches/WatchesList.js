@@ -12,7 +12,7 @@ const WatchesList = props => {
           <WatchesItem
             key={watch.id}
             id={watch.id}
-            title={watch.title}
+            brand={watch.brand}
             price={watch.price}
             image={watch.image}
           />

@@ -22,7 +22,7 @@ const WatchesItem = props => {
               : classes['card-bottom-details']
           }
         >
-          <h3>{props.title}</h3>
+          <h3>{props.brand}</h3>
           <p>Checkout the details</p>
         </div>
       </li>

@@ -8,7 +8,7 @@ const Sidebar = props => {
         <WatchesItem
           key={watch.id}
           id={watch.id}
-          title={watch.title}
+          brand={watch.brand}
           image={watch.image}
         />
       ))}

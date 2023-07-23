@@ -55,16 +55,18 @@ export async function getStaticProps(context) {
     props: {
       watchDetails: {
         id: selectedWatch._id.toString(),
-        title: selectedWatch.title,
+        brand: selectedWatch.brand,
         price: selectedWatch.price,
         image: selectedWatch.image,
         material: selectedWatch.material,
+        movement: selectedWatch.movement,
+        model: selectedWatch.model,
       },
 
       allWatchesExceptSelected: allWatchesExceptSelected
         .map(watch => ({
           image: watch.image,
-          title: watch.title,
+          brand: watch.brand,
           price: watch.price,
           id: watch._id.toString(),
         }))

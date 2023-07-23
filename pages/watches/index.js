@@ -22,7 +22,7 @@ export async function getStaticProps() {
     props: {
       watches: watches.map(watch => ({
         image: watch.image,
-        title: watch.title,
+        brand: watch.brand,
         price: watch.price,
         id: watch._id.toString(),
       })),
