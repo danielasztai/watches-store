@@ -8,17 +8,16 @@
 
 .container {
   display: flex;
-  justify-content: flex-start;
   margin-left: 100px;
   width: 1000px;
   background-color: rgb(63, 3, 3);
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .container img {
   width: 50%;
   height: auto;
-  border-radius: 50px 0 0 50px;
+  border-radius: 10px 0 0 10px;
 }
 
 .details {
@@ -30,8 +29,15 @@
   margin-top: 20px;
 }
 
-.details h1 {
-  font-size: 1.8rem;
+.detail-container {
+  width: 90%;
+}
+
+.detail {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid;
 }
 
 .model {
@@ -39,6 +45,6 @@
 }
 
 .details p {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin-bottom: 5px;
 }

@@ -6,6 +6,8 @@
 
 .img:hover {
   -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+  transition: 0.4s;
 }
 
 .card-bottom {

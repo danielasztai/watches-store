@@ -61,6 +61,10 @@ export async function getStaticProps(context) {
         material: selectedWatch.material,
         movement: selectedWatch.movement,
         model: selectedWatch.model,
+        year: selectedWatch.year,
+        condition: selectedWatch.condition,
+        diameter: selectedWatch.diameter,
+        gender: selectedWatch.gender,
       },
 
       allWatchesExceptSelected: allWatchesExceptSelected

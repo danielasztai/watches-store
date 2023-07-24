@@ -9,19 +9,43 @@ const WatchDetails = props => {
         <div className={classes.container}>
           <img src={props.watchDetails.image} />
           <div className={classes.details}>
-            <div className={classes.left}>
-              <h1>Brand:</h1>
-              <p className={classes.model}>Model:</p>
-              <p>Material:</p>
-              <p>Movement:</p>
-              <p>Price:</p>
-            </div>
-            <div className={classes.right}>
-              <h1>{props.watchDetails.brand}</h1>
-              <p className={classes.model}>{props.watchDetails.model}</p>
-              <p>{props.watchDetails.material}</p>
-              <p>{props.watchDetails.movement}</p>
-              <p>{props.watchDetails.price}$</p>
+            <div className={classes['detail-container']}>
+              <div className={classes.detail}>
+                <p>Brand</p>
+                <p>{props.watchDetails.brand}</p>
+              </div>
+              <div className={classes.detail}>
+                <p className={classes.model}>Model</p>
+                <p className={classes.model}>{props.watchDetails.model}</p>
+              </div>
+              <div className={classes.detail}>
+                <p>Material</p>
+                <p>{props.watchDetails.material}</p>
+              </div>
+              <div className={classes.detail}>
+                <p>Condition</p>
+                <p>{props.watchDetails.condition}</p>
+              </div>
+              <div className={classes.detail}>
+                <p>Year of production</p>
+                <p>{props.watchDetails.year}</p>
+              </div>
+              <div className={classes.detail}>
+                <p>Movement</p>
+                <p>{props.watchDetails.movement}</p>
+              </div>
+              <div className={classes.detail}>
+                <p>Diameter</p>
+                <p>{props.watchDetails.diameter}mm</p>
+              </div>
+              <div className={classes.detail}>
+                <p>Gender</p>
+                <p>{props.watchDetails.gender}</p>
+              </div>
+              <div className={classes.detail}>
+                <p>Price</p>
+                <p>{props.watchDetails.price.toLocaleString()}$</p>
+              </div>
             </div>
           </div>
         </div>
