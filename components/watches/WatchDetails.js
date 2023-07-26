@@ -1,8 +1,18 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import classes from './WatchDetails.module.css';
 import Sidebar from '../Sidebar/Sidebar';
 
 const WatchDetails = props => {
+  const [isInfoHovered, setIsInfoHovered] = useState(false);
+
+  const infoOpenHandler = () => {
+    setIsInfoHovered(true);
+  };
+
+  const infoCloseHandler = () => {
+    setIsInfoHovered(false);
+  };
+
   return (
     <Fragment>
       <div className={classes.wrapper}>
@@ -24,7 +34,48 @@ const WatchDetails = props => {
               </div>
               <div className={classes.detail}>
                 <p>Condition</p>
-                <p>{props.watchDetails.condition}</p>
+                <p>
+                  {props.watchDetails.condition}
+                  <a
+                    className={classes.info}
+                    onMouseOver={infoOpenHandler}
+                    onMouseOut={infoCloseHandler}
+                  >
+                    ⓘ
+                  </a>
+                </p>
+                {isInfoHovered && (
+                  <div className={classes['condition-box']}>
+                    <div className={classes['condition-line']}>
+                      <h3>New</h3>
+                      <p>Brand new, without any signs of wear</p>
+                    </div>
+                    <div className={classes['condition-line']}>
+                      <h3>Unworn</h3>
+                      <p>Mint condition, without signs of wear</p>
+                    </div>
+                    <div className={classes['condition-line']}>
+                      <h3>Very good</h3>
+                      <p>Worn with little to no signs of wear</p>
+                    </div>
+                    <div className={classes['condition-line']}>
+                      <h3>Good</h3>
+                      <p>Light signs of wear or scratches</p>
+                    </div>
+                    <div className={classes['condition-line']}>
+                      <h3>Fair</h3>
+                      <p>Obvious signs of wear or scratches</p>
+                    </div>
+                    <div className={classes['condition-line']}>
+                      <h3>Poor</h3>
+                      <p>Heavy signs of wear or scratches</p>
+                    </div>
+                    <div className={classes['condition-line']}>
+                      <h3>Incomplete</h3>
+                      <p>Components missing, non-functional</p>
+                    </div>
+                  </div>
+                )}
               </div>
               <div className={classes.detail}>
                 <p>Year of production</p>

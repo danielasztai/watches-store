@@ -118,25 +118,25 @@ const NewWatchForm = props => {
             Condition<span className={classes.asterisk}>*</span>
           </label>
           <select type="text" id="condition" required ref={conditionRef}>
-            <option value="New (Brand new, without any signs of wear)">
+            <option value="New">
               New (Brand new, without any signs of wear)
             </option>
-            <option value="Unworn (Mint condition, without signs of wear)">
+            <option value="Unworn">
               Unworn (Mint condition, without signs of wear)
             </option>
-            <option value="Very good (Worn with little to no signs of wear)">
+            <option value="Very good">
               Very good (Worn with little to no signs of wear)
             </option>
-            <option value="Good (Light signs of wear or scratches)">
+            <option value="Good">
               Good (Light signs of wear or scratches)
             </option>
-            <option value="Fair (Obvious signs of wear or scratches)">
+            <option value="Fair">
               Fair (Obvious signs of wear or scratches)
             </option>
-            <option value="Poor (Heavy signs of wear or scratches)">
+            <option value="Poor">
               Poor (Heavy signs of wear or scratches)
             </option>
-            <option value="Incomplete (Components missing, non-functional)">
+            <option value="Incomplete">
               Incomplete (Components missing, non-functional)
             </option>
           </select>
