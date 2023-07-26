@@ -37,3 +37,19 @@
 .header a.active {
   color: white;
 }
+
+@media only screen and (max-width: 800px) {
+  .header a {
+    font-size: 1.2rem;
+  }
+
+  .header li {
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header a {
+    display: none;
+  }
+}

@@ -6,7 +6,7 @@
 .watches-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   column-gap: 150px;
   row-gap: 100px;
   list-style-type: none;

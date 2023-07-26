@@ -2,6 +2,7 @@
   height: 90vh;
   width: 300px;
   overflow-y: scroll;
+  list-style: none;
 }
 
 .container img {
@@ -9,10 +10,40 @@
   height: 350px;
 }
 
-.card-bottom {
-  width: 250px;
-}
-
 .container li {
   margin-bottom: 10px;
 }
+
+@media only screen and (max-width: 1400px) {
+  .container img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .container {
+    margin-right: -50px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: flex;
+    column-gap: 20px;
+    width: 90%;
+    margin: 0;
+    max-height: 400px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container img {
+    width: 150px;
+    height: 225px;
+  }
+
+  .container {
+    max-height: 300px;
+  }
+}
+
+/* Style of the bottom part of sidebar watches, where the "brand header" is, is managed in the WatchesItem.module.css */
