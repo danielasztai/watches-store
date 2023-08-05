@@ -49,7 +49,19 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .header a {
+  /* .header nav {
     display: none;
+  } */
+  /* .header {
+    justify-content: center;
+  } */
+  .header a {
+    font-size: 0.8rem;
+  }
+  .header li {
+    margin-left: 0.5rem;
+  }
+  .header {
+    padding: 0 10px;
   }
 }

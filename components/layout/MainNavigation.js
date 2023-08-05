@@ -11,10 +11,14 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link href="/watches">All Watches</Link>
+            <Link href="/watches" className={classes.menu}>
+              All Watches
+            </Link>
           </li>
           <li>
-            <Link href="/new-watch">Add New Watch</Link>
+            <Link href="/new-watch" className={classes.menu}>
+              Add New Watch
+            </Link>
           </li>
         </ul>
       </nav>

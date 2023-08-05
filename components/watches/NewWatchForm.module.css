@@ -55,3 +55,12 @@
 .asterisk {
   font-size: 1.1rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .form {
+    width: 280px;
+  }
+  .container h1 {
+    font-size: 1.6rem;
+  }
+}
