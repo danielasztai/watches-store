@@ -21,7 +21,7 @@ const Welcome = () => {
             <p>Precision on the highest level</p>
           </div>
           <Link href="/watches" className={classes.discover}>
-            Discover Our Collection <span className={classes.arrow}>🡢</span>
+            Discover Our Collection <span className={classes.arrow}>→</span>
           </Link>
         </div>
       </div>
