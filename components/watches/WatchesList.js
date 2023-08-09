@@ -25,4 +25,3 @@ const WatchesList = props => {
 };
 
 export default WatchesList;
-export const dynamic = 'force-dynamic';

@@ -27,6 +27,7 @@ export async function getStaticProps() {
         id: watch._id.toString(),
       })),
     },
+    revalidate: 5,
   };
 }
 
