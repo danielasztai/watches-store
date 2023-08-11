@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 import classes from './Welcome.module.css';
 
-import welcomeImg from '../../assets/welcome-img_1.jpg';
+import welcomeImg from '../../public/images/welcome-img_1.jpg';
 
 const Welcome = () => {
   return (
@@ -13,7 +13,9 @@ const Welcome = () => {
       <div className={classes.container}>
         <Image
           src={welcomeImg}
-          alt="Picture of an Omega Seamaster sunken in water"
+          alt="Elegant man wearing a nice watch."
+          height={1080}
+          width={960}
         />
         <div className={classes['text-container']}>
           <div className={classes.text}>

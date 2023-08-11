@@ -50,7 +50,7 @@
     display: none;
   }
   .container {
-    background: url('../../assets/welcome-img_1.jpg');
+    background: url('../../public/images/welcome-img_1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: flex-end;
